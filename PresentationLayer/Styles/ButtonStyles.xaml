@@ -1,0 +1,438 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+                    >
+
+
+    <!--BEGIN ENCRYPTION Radio Button -->
+    <Style x:Key="EncryptionRadioButton" TargetType="RadioButton">
+        <!-- Normal button Style -->
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Margin" Value="5,0,0,5" />
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource panelBaseColorDark_III}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border Background="{TemplateBinding Background}"
+                         CornerRadius="5"
+                         BorderThickness="2,2,2,2"
+                         BorderBrush="{TemplateBinding BorderBrush }">
+                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+
+            <!--Mouse Over Back Color - Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Margin" Value="5,0,0,5" />
+                <Setter Property="Background" Value="{StaticResource buttonColorGreen_I}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBlack}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource plaintextBrightWhite}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Trigger>
+
+            <!-- Active button back color - Activated button Style -->
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Margin" Value="5,0,0,5" />
+                <Setter Property="Background" Value="{StaticResource buttonColorGreen_VII}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBrightWhite}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- ENCRYPTION Icon-->
+    <Style x:Key="EncryptionIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{StaticResource plaintextWhite}" />
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Margin" Value="5,2,5,5"/>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Foreground" Value="{StaticResource buttonColorBlue_VII}" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+
+    <!--END ENCRYPTION Radio Button -->
+
+
+    <!-- -->
+    <!-- -->
+    <!--BEGIN DECRYPTION Radio Button -->
+    <Style x:Key="DecryptionRadioButton" TargetType="RadioButton">
+        <!-- Normal button Style -->
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Margin" Value="5,0,0,5" />
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource panelBaseColorDark_III}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border Background="{TemplateBinding Background}"
+                      CornerRadius="5"
+                      BorderThickness="2,2,2,2"
+                      BorderBrush="{TemplateBinding BorderBrush }">
+                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+
+            <!--Mouse Over Back Color - Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Margin" Value="5,0,0,5" />
+                <Setter Property="Background" Value="{StaticResource buttonColorBlue_I}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBlack}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource plaintextBrightWhite}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Trigger>
+
+            <!-- Active button back color - Activated button Style -->
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Margin" Value="5,0,0,5" />
+                <Setter Property="Background" Value="{StaticResource buttonColorBlue_VII}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBrightWhite}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- DECRYPTION Icon-->
+    <Style x:Key="DecryptionIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{StaticResource plaintextWhite}" />
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Margin" Value="5,2,5,5"/>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Foreground" Value="{StaticResource buttonColorGreen_VII}" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+
+    <!--END ENCRYPTION Radio Button -->
+    <!-- -->
+    <!-- -->
+
+
+    <!-- menu button icon-->
+    <Style x:Key="controlButtonIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{Binding Path=Tag, RelativeSource={RelativeSource AncestorType=Button}}" />
+        <Setter Property="Width" Value="9"/>
+        <Setter Property="Height" Value="9" />
+    </Style>
+
+
+
+
+    <!-- Radio Button-->
+    <Style x:Key="menuButton" TargetType="RadioButton">
+        <!-- Normal button Style -->
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Margin" Value="5,0,0,5" />
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource plainTextColor3}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border Background="{TemplateBinding Background}"
+                      BorderThickness="4,0,0,0"
+                      BorderBrush="{TemplateBinding BorderBrush }">
+                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+
+            <!--Mouse Over Back Color -->
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Margin" Value="5,0,0,5" />
+                <Setter Property="Background" Value="{StaticResource panelOverColor}"/>
+                <Setter Property="Foreground" Value="{StaticResource plainTextColor3}"/>
+
+            </Trigger>
+
+            <!-- Active button back color-->
+            <!-- Activated button Style -->
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Margin" Value="5,0,0,5" />
+                <Setter Property="Background" Value="{StaticResource panelActiveColor}"/>
+                <Setter Property="Foreground" Value="{Binding Path=Tag, RelativeSource={RelativeSource Self }}"/>
+
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+
+
+
+           
+    <!-- Control Bar Button -->
+    <Style x:Key="controlButton" TargetType="Button">
+        <!-- Normal button style-->
+        <Setter Property="Width" Value="35"/>
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource plainTextColor3}"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="4">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="{StaticResource panelActiveColor}"/>
+                <Setter Property="Foreground" Value="{Binding Path=Tag, RelativeSource={RelativeSource Self}}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+                   
+            <!-- -->
+            <!-- -->
+     <!--Control Bar buttons cont -->
+    <Style x:Key="iconButton" TargetType="Button">
+        <!-- Normal Button Style-->
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Width" Value="25" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="{StaticResource plainTextColor3}" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="4" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <!-- Button style on hover -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{Binding Path=Tag , RelativeSource={RelativeSource Self}}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>        
+    
+    <!-- Menu button Icon-->
+    <Style x:Key="iconButtonIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{Binding Path=Tage , RelativeSource={RelativeSource AncestorType=Button}}"/>
+        <Setter Property="Width" Value="16" />
+        <Setter Property="Height" Value="16" />
+    </Style>
+
+
+    <!-- Action Button -->
+    <Style x:Key="actionButton" TargetType="Button">
+        <!-- Default button style-->
+        <Setter Property="Height" Value=" 35"/>
+        <Setter Property="Width" Value="90"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background" Value="{StaticResource buttonDefaultColor}" />
+        <Setter Property="Foreground" Value="{StaticResource plaintextWhite}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource borderDefaultColorWhite}" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"                           
+                            CornerRadius="4"
+                            BorderThickness="2,2,2,2"                            
+                            BorderBrush="{TemplateBinding BorderBrush }"                      
+                          >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="{StaticResource panelActiveColor}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextNeonWhite}" />
+                <Setter Property="BorderBrush" Value="{StaticResource borderOverColorFuchsia}"/>
+                <Setter Property="BorderThickness" Value="10 ,10, 10, 10"/>
+            </Trigger>
+            
+        </Style.Triggers>
+    </Style>
+    
+    
+    <!-- Action button icon-->
+    <Style x:Key="actionButtonIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{StaticResource plaintextWhite}" />
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Margin" Value="5,2,5,5"/>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Foreground" Value="{StaticResource plaintextFuchsia}" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+
+
+
+    <!--BEGIN ENCRYPTION Action Button -->
+    <Style x:Key="EncryptionActionButton" TargetType="Button">
+        <!-- Default button style-->
+        <Setter Property="Height" Value=" 35"/>
+        <Setter Property="Width" Value="95"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background" Value="{StaticResource buttonColorGreen_VII}"/>
+        <Setter Property="Foreground" Value="{StaticResource plaintextBrightWhite}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource buttonColorGreen_VII}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"                           
+                            CornerRadius="4"
+                            BorderThickness="1,1,1,1"                            
+                            BorderBrush="{TemplateBinding BorderBrush }"                      
+                          >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="{StaticResource buttonColorGreen_II}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBlack}" />
+                <Setter Property="BorderBrush" Value="{StaticResource plaintextBrightWhite}"/>
+            </Trigger>
+
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{StaticResource panelActiveColorDark_II}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBlack}" />
+                <Setter Property="BorderBrush" Value="{StaticResource panelActiveColorDark_II}"/>
+            </Trigger>
+
+        </Style.Triggers>
+    </Style>
+
+
+    <!-- ENCRYPTION Action button icon-->
+    <Style x:Key="EncryptionActionIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{StaticResource plaintextWhite}" />
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Margin" Value="5,2,5,5"/>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Foreground" Value="{StaticResource buttonColorGreen_VII}" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+    <!--END ENCRYPTION Action Button   -->
+
+    <!-- -->
+    <!-- -->
+
+    <!--BEGIN DECRYPTION Action Button -->
+    <Style x:Key="DecryptionActionButton" TargetType="Button">
+        <!-- Default button style-->
+        <Setter Property="Height" Value=" 35"/>
+        <Setter Property="Width" Value="95"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background" Value="{StaticResource buttonColorBlue_VII}"/>
+        <Setter Property="Foreground" Value="{StaticResource plaintextBrightWhite}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource buttonColorBlue_VII}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"                           
+                            CornerRadius="4"
+                            BorderThickness="1,1,1,1"                            
+                            BorderBrush="{TemplateBinding BorderBrush }"                      
+                          >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="{StaticResource buttonColorBlue_II}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBlack}" />
+                <Setter Property="BorderBrush" Value="{StaticResource plaintextBrightWhite}"/>
+            </Trigger>
+
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{StaticResource panelActiveColorDark_II}"/>
+                <Setter Property="Foreground" Value="{StaticResource plaintextBlack}" />
+                <Setter Property="BorderBrush" Value="{StaticResource panelActiveColorDark_II}"/>
+            </Trigger>
+
+        </Style.Triggers>
+    </Style>
+
+
+    <!-- DECRYPTION Action button icon-->
+    <Style x:Key="DecryptionActionIcon" TargetType="fa:IconImage">
+        <Setter Property="Foreground" Value="{StaticResource plaintextWhite}" />
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Margin" Value="5,2,5,5"/>
+
+        <Style.Triggers>
+            <!-- Button Style on Hover-->
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Foreground" Value="{StaticResource buttonColorBlue_VII}" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+
+    <!--END DECRYPTION Action Button   -->
+
+    <!-- -->
+    <!-- -->
+
+</ResourceDictionary>

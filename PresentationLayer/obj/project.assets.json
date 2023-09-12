@@ -1,0 +1,324 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0-windows7.0": {
+      "Autofac/7.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/net7.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Autofac.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "FontAwesome.Sharp/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
+      "System.Diagnostics.DiagnosticSource/4.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Autofac": "7.1.0",
+          "ServiceLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "DomainLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Autofac": "7.1.0",
+          "DataAccessLayer": "1.0.0",
+          "ServiceLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DomainLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLayer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "ServiceLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Autofac": "7.1.0"
+        },
+        "compile": {
+          "bin/placeholder/ServiceLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceLayer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/7.1.0": {
+      "sha512": "XCXmpxhOnuztTTRkzG+8B8KU8SR8WjBYwSntndjlsFR5lM3K/g43r9hUwewIPDBJwDrmZU3TjmNdH6s8IF3VFQ==",
+      "type": "package",
+      "path": "autofac/7.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "autofac.7.1.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net6.0/Autofac.dll",
+        "lib/net6.0/Autofac.xml",
+        "lib/net7.0/Autofac.dll",
+        "lib/net7.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "Expression.Blend.Sdk/1.0.2": {
+      "sha512": "2rOHxr7HsJ4gVc75JymaFDS80VvhT/1rpm50LHUKRmsykE1cdM4n2rmcntcTSG08/S1ZedLuSWQpb3yBY3xfUQ==",
+      "type": "package",
+      "path": "expression.blend.sdk/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "expression.blend.sdk.1.0.2.nupkg.sha512",
+        "expression.blend.sdk.nuspec",
+        "lib/net40-client/System.Windows.Interactivity.dll",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/netcore45/Windows.UI.Interactivity.dll",
+        "lib/netcore45/Windows.UI.Interactivity.pri",
+        "lib/netcore45/Windows.UI.Interactivity.xml",
+        "lib/netcore451/Windows.UI.Interactivity.dll",
+        "lib/netcore451/Windows.UI.Interactivity.pri",
+        "lib/netcore451/Windows.UI.Interactivity.xml",
+        "lib/sl4-wp71/System.Windows.Interactivity.dll",
+        "lib/sl40/System.Windows.Interactivity.dll",
+        "lib/sl50/System.Windows.Interactivity.dll",
+        "lib/wp8/System.Windows.Interactivity.dll"
+      ]
+    },
+    "FontAwesome.Sharp/6.3.0": {
+      "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.3.0.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.7.1": {
+      "sha512": "j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "DomainLayer/1.0.0": {
+      "type": "project",
+      "path": "../DomainLayer/DomainLayer.csproj",
+      "msbuildProject": "../DomainLayer/DomainLayer.csproj"
+    },
+    "ServiceLayer/1.0.0": {
+      "type": "project",
+      "path": "../ServiceLayer/ServiceLayer.csproj",
+      "msbuildProject": "../ServiceLayer/ServiceLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0-windows7.0": [
+      "Autofac >= 7.1.0",
+      "DomainLayer >= 1.0.0",
+      "Expression.Blend.Sdk >= 1.0.2",
+      "FontAwesome.Sharp >= 6.3.0",
+      "ServiceLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Windows\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\PresentationLayer\\PresentationLayer.csproj",
+      "projectName": "PresentationLayer",
+      "projectPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\PresentationLayer\\PresentationLayer.csproj",
+      "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\PresentationLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "projectReferences": {
+            "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\DomainLayer\\DomainLayer.csproj": {
+              "projectPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\DomainLayer\\DomainLayer.csproj"
+            },
+            "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\ServiceLayer\\ServiceLayer.csproj": {
+              "projectPath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\ServiceLayer\\ServiceLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[7.1.0, )"
+          },
+          "Expression.Blend.Sdk": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Expression.Blend.Sdk 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Expression.Blend.Sdk",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
+}

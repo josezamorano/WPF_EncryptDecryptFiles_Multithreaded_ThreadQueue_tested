@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Eqs29tiqdxt2zn9nmrYY/GM02HZVSuoSNsZGMNuh4eFpZoukUsCTlofC35+7UyJnJ4QD/RkHk9IXHBwqM/A8fw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\DataAccessLayer\\DataAccessLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

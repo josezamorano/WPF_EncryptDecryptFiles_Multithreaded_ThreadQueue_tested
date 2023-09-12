@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PresentationLayer_tiz3nabl_wpftmp
+build_property.ProjectDir = C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_FileEncryptDecrypt_Project\05_EncryptDecrypt_PwdValidate\PresentationLayer\

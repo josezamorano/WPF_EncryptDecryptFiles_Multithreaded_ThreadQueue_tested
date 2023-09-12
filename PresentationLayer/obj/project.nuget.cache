@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "QBeURGIrQPcJemxc5Ozx4dJSbZkjiu08u2OzNVq2MoQ5BfzLyqXQmc3Xcak2Zv6qOxdV26QiIUqm4BXbXYyTew==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Windows\\Documents\\Academy\\CSharp\\_MyProjects\\WPF_FileEncryptDecrypt_Project\\12_EncryptDecrypt_UnitTests\\PresentationLayer\\PresentationLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Windows\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\expression.blend.sdk\\1.0.2\\expression.blend.sdk.1.0.2.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
+    "C:\\Users\\Windows\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Expression.Blend.Sdk 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Expression.Blend.Sdk",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    }
+  ]
+}

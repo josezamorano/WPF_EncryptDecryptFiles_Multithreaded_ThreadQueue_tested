@@ -1,0 +1,5 @@
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_FileEncryptDecrypt_Project\12_EncryptDecrypt_UnitTest\UnitTestFileEncryptDecrypt\obj\Debug\net7.0\UnitTestFileEncryptDecrypt.csproj.AssemblyReference.cache
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_FileEncryptDecrypt_Project\12_EncryptDecrypt_UnitTest\UnitTestFileEncryptDecrypt\obj\Debug\net7.0\UnitTestFileEncryptDecrypt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_FileEncryptDecrypt_Project\12_EncryptDecrypt_UnitTest\UnitTestFileEncryptDecrypt\obj\Debug\net7.0\UnitTestFileEncryptDecrypt.AssemblyInfoInputs.cache
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_FileEncryptDecrypt_Project\12_EncryptDecrypt_UnitTest\UnitTestFileEncryptDecrypt\obj\Debug\net7.0\UnitTestFileEncryptDecrypt.AssemblyInfo.cs
+C:\Users\Windows\Documents\Academy\CSharp\_MyProjects\WPF_FileEncryptDecrypt_Project\12_EncryptDecrypt_UnitTest\UnitTestFileEncryptDecrypt\obj\Debug\net7.0\UnitTestFileEncryptDecrypt.csproj.CoreCompileInputs.cache
