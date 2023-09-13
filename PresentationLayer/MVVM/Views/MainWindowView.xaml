@@ -29,10 +29,6 @@
             <view:DecryptFilesView />
         </DataTemplate>
 
-        <!--<DataTemplate DataType="{x:Type viewModel:ModalViewModel}">
-            <view:ModalView />
-        </DataTemplate>-->
-
     </Window.Resources>
 
     <Border CornerRadius="5"
